@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    background-color: #e0f7fa; /* Fundo mais expressivo */
+}
+
+.app {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border: 5px solid #ff5722; /* Borda chamativa */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Largura máxima */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    border-radius: 15px 15px 0 0; /* Bordas arredondadas no topo */
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.categories {
+    margin: 20px 0;
+}
+
+.categories button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordas ovais */
+    transition: background-color 0.3s;
+    font-size: 16px; /* Aumenta a fonte */
+}
+
+.categories button:hover {
+    background-color: #0056b3;
+}
+
+.menu, .cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin: 20px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 20px; /* Bordas ovais */
+    background-color: #f8f9fa; /* Fundo claro para os itens */
+    display: flex; /* Flexbox para alinhar imagem e texto */
+    align-items: center; /* Centraliza verticalmente */
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.menu-image {
+    width: 100px; /* Ajuste conforme necessário */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.menu-item div {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.menu-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordas ovais */
+    font-size: 14px; /* Aumenta a fonte */
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.payment-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordas ovais */
+    font-size: 16px; /* Aumenta a fonte */
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: #218838;
+}
